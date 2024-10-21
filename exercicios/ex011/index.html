@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâminca</h1>
+    <p>Tente abrir essas imagens em vários dispositivos diferentes.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/P.png"> <!--o html indica a melhor img de acordo com tamanho da tela do usuário-->
+        <source media="(max-width: 1050px)" srcset="imagens/M.png">
+        <img src="imagens/G.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo aúdios</h1>
+    <p>Aprendendo a reproduzir aúdios.</p>
+    <!--forma simples-->
+    <audio src="midia/webdrivertorso.mp3" controls autoplay></audio> 
+    <!--forma robusta pra evitar incompatibilidade-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/webdrivertorso.mp3" type="audio/mpeg">
+        <source src="midia/webdrivertorso.ogg" type="audio/ogg">
+        <source src="midia/webdrivertorso.wav" type="audio/wav"> <!--muito pesado-->
+        
+        <p>Infelismente seu navegador pode não ser compatível,então baixe o aúdio <a href="midia/webdrivertorso.mp3">clicando aqui</a></p>
+    </audio>
+</body>
+</html>
