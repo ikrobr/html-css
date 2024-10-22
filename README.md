@@ -1,2 +1,2 @@
 # html-css
-CursoemVídeo_Guanabara
+Praticando com Guanabara
