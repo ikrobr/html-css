@@ -1,2 +1,2 @@
 # html-css
-Praticando com Guanabara
+Praticando com Gustavo Guanabara
