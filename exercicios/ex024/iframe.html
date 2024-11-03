@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        a {
+            display: block;
+          
+        }
+
+        iframe {
+            width: 95vw;
+            height: 450px;
+            background-color: rgb(227, 253, 189);
+            color: white;
+            border: 1px solid black;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iframes</h1>
+    <p>Carregando iframes de outros sites ou endereço de imagem. Ao clicar no link , a pág será carregada no iframe abaixo </p>
+
+    <a href="1.jpg" target="iframe">Opção 1</a>
+    <a href="2.jpg" target="iframe">Opção 2</a>
+    <a href="3.jpg" target="iframe">Opção 3</a>
+
+    <iframe name="iframe" srcdoc="<h1>Clique em uma das opções acima</h1>"></iframe>
+</body>
+
+</html> 
