@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        div.contenier {
+            background-color: rgb(11, 45, 45);
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div.item {
+            background-color: rgb(255, 127, 127);
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        #A {
+            flex: 0 1 150px;
+        }
+
+        #B {
+            flex-basis: 150px;
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+
+        #C {
+            flex-basis: 150px;
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenier">
+        <div class="item" id="A">A Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa officiis eius aut voluptates quidem nobis doloremque aliquam esse quaerat inventore cumque illum, pariatur aspernatur nam voluptas minima eaque reprehenderit est?</div>
+        <div class="item" id="B">B Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae facere dolore doloremque minus consectetur tempore molestias libero. Aperiam, possimus dolorem vero ut laboriosam iusto fugiat ad odio dolorum impedit.</div>
+        <div class="item" id="C">C  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus consectetur non facilis mollitia, esse eius modi tenetur dolor, beatae tempora consequatur at alias eos voluptate! Possimus neque tempore asperiores obcaecati!</div>
+    </div>
+</body>
+</html> 
