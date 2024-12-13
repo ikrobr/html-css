@@ -14,17 +14,47 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.121), rgba(235, 164, 31, 0.126));
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.121), rgba(235, 164, 31, 0.126));
     padding: 10px;
-    color: wheat;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 img {
     width: 150px;
+    margin: auto;
+    display: flex;
 }
 
-header > h1 {
+header > img {
+    flex: 0 0 150px;
+}
+
+header > nav {
+    display: flex;
+    flex: row wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header > nav > a{
+    background-color: black;
+    color: white;
+    padding: 6px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: flex-end;
+    border: 0.8px solid white ;
+}
+
+header > nav > a:hover {
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.121), rgba(235, 164, 31, 0.126));
+    color: rgb(74, 27, 10);
     border: 1px solid black;
+    transition: background-color .5s;
 }
 
 main {
